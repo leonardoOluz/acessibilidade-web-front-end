@@ -185,7 +185,7 @@
             <li>App SEO</li>
             <li>4 sistemas operacionais</li>
             <li>24h de atendimento</li>
-          </ul> 
+          </ul>
           <a href="#" class="btnPadrao secaoPlanos-plano-btn">
             Assinar plano <span class="escondeVisualmente">
               Ultra por R$ 1500
@@ -224,8 +224,7 @@
 
         <li id="new0" class="listaDeArtigos-item" data-noticia="0">
           <article class="listaDeArtigos-artigo">
-            <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img"
-              alt>
+            <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img" alt>
             <h2 class="listaDeArtigos-artigo-titulo">
               Conheça os 10 aplicativos mais badalados do momento
             </h2>
@@ -257,8 +256,7 @@
 
         <li id="new2" class="listaDeArtigos-item" data-noticia="2">
           <article class="listaDeArtigos-artigo">
-            <img src="img/dicas-acessibilidade.jpg" class="listaDeArtigos-artigo-img"
-              alt=^^>
+            <img src="img/dicas-acessibilidade.jpg" class="listaDeArtigos-artigo-img" alt=^^>
             <h2 class="listaDeArtigos-artigo-titulo">
               5 dicas para melhorar a acessibilidade em sua interface
             </h2>
@@ -359,74 +357,79 @@
 
         <form class="secaoContato-form">
 
-          <p class="secaoContato-form-legend">
-            Oi, tudo bem? Fale com a gente!
-            Preencha seus dados e sua mensagem:
-          </p>
+          <fieldset>
 
-          <div class="contatoCampo contatoCampo--sucesso">
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required>
-          </div>
+            <legend class="secaoContato-form-legend">
+              Oi, tudo bem? Fale com a gente!
+              Preencha seus dados e sua mensagem:
+            </legend>
 
-          <div class="contatoCampo contatoCampo--erro">
-            <label for="email">Email: </label>
-            <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email.." required>
-            <span class="contatoCampo-msg contatoCampo-msg--erro">
-              Você quis dizer <a href="#">gmail.com?</a>
-            </span>
-          </div>
+            <div class="contatoCampo contatoCampo--sucesso">
+              <label for="nome">Nome: </label>
+              <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required>
+            </div>
 
-          <div class="contatoCampo contatoCampo--erro">
-            <label>Telefone: </label>
-            <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
-            <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
-          </div>
+            <div class="contatoCampo contatoCampo--erro">
+              <label for="email">Email: </label>
+              <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email.." required>
+              <span class="contatoCampo-msg contatoCampo-msg--erro">
+                Você quis dizer <a href="#">gmail.com?</a>
+              </span>
+            </div>
 
-          <div class="contatoCampo">
-            <label>CEP: </label>
-            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
-          </div>
+            <div class="contatoCampo contatoCampo--erro">
+              <label>Telefone: </label>
+              <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+              <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
+            </div>
 
-          <div class="contatoCampo">
-            <label>Endereço: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
-          </div>
+            <div class="contatoCampo">
+              <label>CEP: </label>
+              <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+            </div>
 
-          <div class="contatoCampo">
-            <label>Bairro: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
-          </div>
+            <div class="contatoCampo">
+              <label>Endereço: </label>
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
+            </div>
 
-          <div class="contatoCampo">
-            <label>Cidade: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
-          </div>
+            <div class="contatoCampo">
+              <label>Bairro: </label>
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
+            </div>
 
-          <div class="contatoCampo">
-            <label>Estado: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
-          </div>
+            <div class="contatoCampo">
+              <label>Cidade: </label>
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
+            </div>
 
-          <div class="contatoCampo">
-            <label>Mensagem: </label>
-            <textarea name="" cols="30" rows="10" required></textarea>
-          </div>
+            <div class="contatoCampo">
+              <label>Estado: </label>
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
+            </div>
 
-          <div class="contatoCampo">
-            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
-            <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
-          </div>
+            <div class="contatoCampo">
+              <label>Mensagem: </label>
+              <textarea name="" cols="30" rows="10" required></textarea>
+            </div>
 
-          <div class="contatoCampo">
-            <button class="secaoContato-form-cta btnPadrao" type="submit">
-              Enviar mensagem
-            </button>
-            <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
-              Verifique os erros acima
-            </span>
-          </div>
+            <div class="contatoCampo">
+              <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+              <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
+            </div>
 
+            <div class="contatoCampo">
+            
+              <button class="secaoContato-form-cta btnPadrao" type="submit">
+                Enviar mensagem
+              </button>
+            
+              <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
+                Verifique os erros acima
+              </span>
+            
+            </div>
+          </fieldset>
         </form>
       </div> <!--fim .container da .secaoContato-->
 
