@@ -1,12 +1,15 @@
-
 .contatoCampo {
   margin: .8em auto;
   max-width: 600px;
   position: relative;
 }
 
+.contatoCampo-label {
+  position: relative;
+}
+
 .contatoCampo-label:before {
-  content:'';
+  content: '';
   vertical-align: middle;
   display: inline-block;
   width: 20px;
@@ -17,18 +20,39 @@
   border: 1px solid #7D7D7D;
   color: transparent;
   line-height: 1;
-  transition: .2s ease-in;
+  transition: background-color .2s ease-in, color .2s ease-in;
+  box-sizing: border-box;
 }
 
-.contatoCampo-checkbox:checked + .contatoCampo-label:before {
-  content: 'x';
+.contatoCampo-checkbox:hover+.contatoCampo-label:before,
+.contatoCampo-checkbox:focus+.contatoCampo-label:before {
+  border: 4px solid #097fb6;
+}
+
+.contatoCampo-checkbox:checked+.contatoCampo-label:before {
+  content: '';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+  border-color: transparent;
+  line-height: 0.8;
+}
+
+.contatoCampo-checkbox:checked+.contatoCampo-label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  width: 10px;
+  height: 7px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  z-index: 2;
+  transform: rotate(-45deg);
 }
 
 .contatoCampo-checkbox {
-/*  display: none;*/
-/*  visibility: hidden*/
+  /*  display: none;*/
+  /*  visibility: hidden*/
   left: -9999px;
   position: absolute;
   opacity: 0;
@@ -47,12 +71,12 @@
   display: block;
   width: 100%;
   text-align: left;
-} 
+}
 
 .contatoCampo label {
   margin-bottom: 5px;
   margin-left: 8px;
-} 
+}
 
 .contatoCampo input,
 .contatoCampo textarea {
@@ -62,18 +86,18 @@
   border-radius: 8px;
   border: 2px solid #ccc;
   outline: 0;
-} 
+}
 
 .contatoCampo input:focus,
 .contatoCampo textarea:focus {
   border: 2px solid #222;
-} 
+}
 
 .contatoCampo-campoDesabilitado {
   background-color: #ddd;
 }
 
-.contatoCampo-msg, 
+.contatoCampo-msg,
 .formContato-validacao {
   margin-left: 4px;
   margin-top: 4px;
@@ -118,4 +142,3 @@
   transform: translateY(112%) scale(.65);
   background-image: url(../img/validacao-erro.png);
 }
-
