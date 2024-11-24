@@ -7,14 +7,16 @@ const sugestao = document.getElementById("sugestao");
 campoEmail.addEventListener("blur", function () {
   Mailcheck.run({
     email: campoEmail.value,
-    domains: domains,  // optional
+    domains: domains, // optional
     topLevelDomains: topLevelDomains, // optional
     secondLevelDomains: secondLevelDomains, // optional
     suggested: function (suggestion) {
-      console.log(suggestion.full)
-      sugestao.style.display = "inline-block"
-      sugestao.innerHTML = `Você quis dizer: <a href="#">${suggestion.full} ?</a>`
-      sugestao.parentNode.classList.add("suggestion.full");
+      sugestao.style.display = "inline-block";
+      sugestao.innerHTML = `Você quis dizer: <a href="#">${suggestion.full} ?</a>`;
+      sugestao.parentNode.classList.add("contatoCampo--erro");
+      campoEmail.classList.add("contatoCampo--validouErro");
+      sugestao.setAttribute("tabindex", "0");
+      sugestao.setAttribute("role", "alert");
     },
   });
 });
